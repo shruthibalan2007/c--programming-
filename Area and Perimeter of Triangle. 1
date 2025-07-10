@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()    
+{
+float base,height,side1,side2,side3;
+float area,perimeter;
+scanf("%f",&base);
+scanf("%f",&height);
+scanf("%f",&side1);
+int count=scanf("%f %f",&side2,&side3);
+area=0.5*base*height;
+if(count==2)
+{
+perimeter=side1+side2+side3;
+}else
+{
+perimeter=side1;
+}
+printf("Area of Triangle is %.2f\n",area);
+printf("Perimeter of Triangle is %.2f\n",perimeter);
+return 0;
+}
