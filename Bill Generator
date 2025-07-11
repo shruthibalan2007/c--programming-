@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+int piz,puf,col,total;
+printf("Bill Details\n");
+scanf("%d",&piz);
+scanf("%d",&puf);
+scanf("%d",&col);
+total=(piz*100)+(puf*20)+(col*10);
+printf("No of pizzas:%d\n",piz);
+printf("No of puffs:%d\n",puf);
+printf("No of cooldrinks:%d\n",col);
+printf("Total price=%d\n",total);
+printf("ENJOY THE SHOW!!!");
+return 0;
+}
