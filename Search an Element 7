@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+int size, i, element, found = 0;
+scanf("%d", &size);
+int arr[size];
+for (i = 0; i < size; i++)
+{
+scanf("%d", &arr[i]);
+}
+scanf("%d", &element);
+for (i = 0; i < size; i++)
+    {
+if (arr[i] == element)
+{
+found = 1;
+break;
+}
+}
+if (found)
+{
+printf("%d is presented in an array.\n", element);
+}
+else
+{
+printf("%d is not presented in an array.\n", element);
+}
+return 0;
+}
